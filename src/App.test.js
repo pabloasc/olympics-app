@@ -29,7 +29,7 @@ describe("AppScreen", () => {
   });
 
   it("always renders a Medal Section", () => {
-  	let medal_imegs = AppScreen().find("div");
+    let medal_imegs = AppScreen().find("div");
     expect(AppScreen().find(Medal).length).toBe(1);
   });
 
@@ -38,18 +38,18 @@ describe("AppScreen", () => {
   });
 
   it("always renders at least one Country Card Section with the medal images and the flag of the country", () => {
-  	let CountryCardSection = AppScreen().find(CountryCard);
-  	
-  	//Find the flag image
-  	let card_body = CountryCardSection.find("div.card-body");
-  	let flag_img = card_body.find("img");
-  	expect(card_body.length).toBe(1);
-	
-  	//Find the gold, silver and bronze medal image
-    let card_footer = CountryCardSection.find("div.card-footer");
-  	let medal_imgs = card_footer.find("img");
-    expect(medal_imgs.length).toBe(3);
+    let CountryCardSection = AppScreen().find(CountryCard);
     
+    //Find the flag image
+    let card_body = CountryCardSection.find("div.card-body");
+    let flag_img = card_body.find("img");
+    expect(card_body.length).toBe(1);
+
+    //Find the gold, silver and bronze medal image
+    let card_footer = CountryCardSection.find("div.card-footer");
+    let medal_imgs = card_footer.find("img");
+    expect(medal_imgs.length).toBe(3);
+
     expect(AppScreen().find(CountryCard).length).toBeGreaterThan(0);
   });
 
