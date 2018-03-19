@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  font-family: Times;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #CCC;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Flex_container {
+  display: flex;
+  justify-content: center;
+}
+
+.Flex_container div {
+  cursor: pointer;
+  width: 30px;
+  margin: 5px 5px 25px;
+}
+
+.Sport_list {
+  margin:0;
+  padding:0;
+}
+
+.card-body {
+  margin: 10px;
+}
+
+.Title {
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+
+ol {
+  display: inline-grid;
+  margin-left: 30px;
+}
+
+ol li {
+  width: 250px;
+  text-align: left;
+}
+
+.Participant {
+  position: absolute;
+  margin-top: 7px;
+}
+
+.Gold_Medals li {
+  list-style-image: url('/img/gold.png');
+}
+
+.Silver_Medals li {
+  list-style-image: url('/img/silver.png');
+}
+
+.Bronze_Medals li {
+  list-style-image: url('/img/bronze.png');
+}
