@@ -22,8 +22,8 @@ const CountryCard = (props) => (
       { props.sports.map(function(sports){
         return <SportList key={sports.Sport.n_ID} sportName={ sports.Sport } goldMedals={ sports.GoldMedalList } silverMedals={ sports.SilverMedalList } bronzeMedals={ sports.BronzeMedalList } />;
       })}
-      </div>
     </div>
+  </div>
 );
 
 CountryCard.defaultProps = {
